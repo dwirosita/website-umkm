@@ -37,3 +37,71 @@ button {
   border: 0;
   border-radius: 999px;
 }
+
+.info-section {
+    max-width: 900px;
+    margin:  auto;
+    padding: 0 40px;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+}
+
+.info-item {
+    flex: 1;
+    background-color: #f7f3ef;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.closing-text {
+    margin-top: 20px;
+}
+
+.produk {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.card .harga {
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
