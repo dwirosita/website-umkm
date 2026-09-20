@@ -106,6 +106,192 @@ button {
     margin: 5px 0 10px;
 }
 
+.hero {
+    padding: 30px 20px;
+}
+
+.hero-image {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+.katalog-section {
+    padding: 50px 0;
+}
+
+.katalog-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.table-wrapper {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+/* Katalog Produk */
+.katalog-section {
+    padding: 50px 0;
+}
+
+.katalog-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.table-wrapper {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.katalog-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.katalog-section th,
+.katalog-section td {
+    border: 1px solid #d8d0c8;
+    padding: 15px;
+    text-align: left;
+}
+
+.katalog-section th {
+    background: #6b4226;
+    color: white;
+    font-weight: 600;
+}
+
+.katalog-section td {
+    background: #fff;
+    color: #444;
+}
+
+.katalog-section tbody tr:hover td {
+    background: #faf6f2;
+}
+
+.katalog-section td:nth-child(2) {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.katalog-section tbody tr:last-child td {
+    border-bottom: n
+
+}
+
+.produk .card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.promo-button {
+    display: inline-block;
+    background: #d4a017;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.promo-button:hover {
+    background: #b8860b;
+}
+
+.audio-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.audio-section h2 {
+    margin-bottom: 20px;
+}
+
+.audio-section audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+.audio-section {
+    padding: 20px 0;
+}
+
+.audio-section .container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.audio-section h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.audio-section audio {
+    width: 350px;
+    display: block;
+}
+
+.tim-proses-section {
+    padding: 40px 0;
+}
+
+.tim-proses-section h2 {
+    margin-bottom: 25px;
+}
+
+.tim-proses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.tim-proses-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tim-proses-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.tim-proses-card h3 {
+    margin: 18px 0 8px;
+}
+
+.tim-proses-card p {
+    line-height: 1.6;
+}
+
 .skip-link { position: absolute; left: -9999px; padding: 8px 12px; color: white; background: #2f2118; }
 .skip-link:focus { top: 8px; left: 8px; }
 .site-header { padding: 16px 20px; background: white; border-bottom: 1px solid #dccbbc; }
