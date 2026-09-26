@@ -292,6 +292,96 @@ button {
     line-height: 1.6;
 }
 
+.produk {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.kontak-section {
+    padding: 50px 20px;
+}
+
+.kontak-section .container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-section h2 {
+    margin-bottom: 10px;
+}
+
+.kontak-section form {
+    margin-top: 25px;
+}
+
+.kontak-section form > div {
+    margin-bottom: 18px;
+}
+
+.kontak-section label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.kontak-section input[type="text"],
+.kontak-section input[type="email"],
+.kontak-section input[type="tel"],
+.kontak-section textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.kontak-section textarea {
+    resize: vertical;
+}
+
+.kontak-section fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 20px 0;
+}
+
+.kontak-section legend {
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.kontak-section fieldset div {
+    margin: 10px 0;
+}
+
+.kontak-section fieldset label {
+    display: inline;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.kontak-section button {
+    background: #f2b01e;
+    color: #222;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.kontak-section button:hover {
+    opacity: 0.9;
+}
+
 .skip-link { position: absolute; left: -9999px; padding: 8px 12px; color: white; background: #2f2118; }
 .skip-link:focus { top: 8px; left: 8px; }
 .site-header { padding: 16px 20px; background: white; border-bottom: 1px solid #dccbbc; }

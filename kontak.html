@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Kopi Nusa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/from.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Kopi Nusa</h1>
+            <p>UMKM Kopi Lokal Pekalongan</p>
+
+            <nav aria-label="Navigasi utama">
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="index.html#kontak">Kontak Singkat</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="kontak-section">
+            <div class="container">
+
+                <h2>Hubungi Kopi Nusa</h2>
+                <p>Silakan isi form berikut untuk menghubungi kami.</p>
+
+                <form action="#" method="post">
+
+                    <div>
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" required minlength="3">
+                        <small>Masukkan nama Lengkap Anda.</small>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="whatsapp">Nomor WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required>
+                    </div>
+
+                    <div>
+                        <label for="paket">Paket diminati</label>
+                        <select id="paket" name="paket" required>
+                            <option value="">-- Pilih paket --</option>
+                            <option value="Kopi Tubruk Signature">Kopi Tubruk Signature</option>
+                            <option value="Cold Brew Aren">Cold Brew Aren</option>
+                            <option value="Kopi Susu Gula Aren">Kopi Susu Gula Aren</option>
+                            <option value="Kopi Robusta Nusa">Kopi Robusta Nusa</option>
+                        </select>
+                        </div>
+
+                    <fieldset>
+
+                    <legend>Topik</legend>
+
+                     <div>
+                         <input type="radio" id="informasi" name="topik" value="Informasi Produk" required>
+                        <label for="informasi">Informasi Produk</label>
+                     </div>
+
+                     <div>
+                         <input type="radio" id="pemesanan" name="topik" value="Pemesanan" required>
+                        <label for="pemesanan">Pemesanan</label>
+                     </div>
+
+                     <div>
+                         <input type="radio" id="lainnya" name="topik" value="Lainnya" required>
+                        <label for="lainnya">Lainnya</label>
+                     </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Waktu yang nyaman untuk dihubungi</legend>
+
+                        <div>
+                            <input type="radio" id="pagi" name="waktu" value="Pagi" required>
+                            <label for="pagi">Pagi</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="siang" name="waktu" value="Siang" required>
+                            <label for="siang">Siang</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="sore" name="waktu" value="Sore" required>
+                            <label for="sore">Sore</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Kirim Pesan</button>
+
+                    <p id="preview"></p>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kopi Nusa. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        const form = document.querySelector("form");
+        const preview = document.getElementById("preview");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById("nama").value;
+
+            preview.textContent =
+                "Terima kasih, " + nama + ". Pesan Anda siap dikirim.";
+        });
+    </script>
+
+</body>
+</html>
