@@ -38,11 +38,21 @@ body {
 }
 
 .hero {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: var(--space-4);
+    align-items: center;
     padding: 30px 20px;
     color: white;
     background: var(--color-primary);
     border-radius: var(--radius-md);
 }
+
+.hero-image { 
+    width: 280px; 
+    border-radius: var(--radius-md);    
+}
+
 
 .eyebrow {
     margin: 0 0 8px;
@@ -105,8 +115,7 @@ button {
 .produk {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -132,14 +141,12 @@ button {
     margin: 5px 0 10px;
 }
 
-.hero-image {
-    width: 220px;
-    height: 140px;
-    object-fit: cover;
-    display: block;
-    margin: 10px auto;
-    border-radius: var(--radius-sm);
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
 }
+
 
 .card img {
     width: 100%;
@@ -397,19 +404,37 @@ button {
 }
 
 .nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .nav li {
-    display: inline-block;
-    margin-right: 12px;
+    margin-right: 0;
+}
+
+.nav a {
+    color: var(--color-primary-strong);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.nav a:hover {
+    color: var(--color-primary);
+    background: var(--color-accent);
 }
 
 .nav a[aria-current="page"] {
     font-weight: 800;
 }
+
 
 a:focus-visible,
 button:focus-visible,
